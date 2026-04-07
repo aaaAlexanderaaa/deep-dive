@@ -61,6 +61,12 @@ Before producing anything, determine:
    (that's CS fundamentals, not backend-specific) and specific frameworks (those are derived from
    language choice).
 
+4. **Content morphology** — What is the natural shape of knowledge in this domain? Not every domain
+   fits the default "learning roadmap" structure. Before choosing an output format, determine the
+   morphology. See `references/content-morphology.md` for the taxonomy. If the morphology calls for
+   a different structure than the default output format, adapt accordingly — the self-audit checklist
+   (Phase 5) still applies regardless of output structure.
+
 ### Phase 2A: Find and extract expert-curated structures (for established domains)
 
 Search for and retrieve at least 2-3 of these, in priority order:
@@ -83,7 +89,10 @@ For each source found:
 
 When no authoritative structure exists:
 
-1. Search for 3+ sources with **different perspectives** on the domain (academic, industry, open-source)
+1. Search for 3+ sources with **different perspectives** on the domain (academic, industry, open-source).
+   "Different perspectives" means **different stances**, not just different disciplines. At least one
+   source should challenge or contradict the emerging thesis. If you can only find sources that agree,
+   state this explicitly — consensus is informative, but so is the absence of opposition.
 2. Map each source's claims about what the domain contains
 3. **Intersection** of all sources = high-confidence core
 4. Items in only one source = needs verification, likely peripheral
@@ -141,6 +150,15 @@ Before presenting the roadmap, check it against these known AI failure modes:
 - [ ] **Subtraction check:** Can I remove any node without loss? If so, remove it.
 - [ ] **Source check:** Is this roadmap grounded in expert-curated sources, or did I generate it
       purely from training data?
+- [ ] **Adversarial source check:** Do my sources include at least one perspective that challenges
+      my core thesis? If all sources agree with each other, I may be in an echo chamber.
+      (See `references/editorial-audit.md` § Source Homogeneity)
+- [ ] **Emphasis density check:** Is bold/italic text used sparingly (≤3-5 per 1000 words)? When
+      everything is emphasized, nothing is. If over-dense, promote the most important points to
+      structural emphasis (headings, pull-quotes, standalone paragraphs) and de-bold the rest.
+- [ ] **Closing sharpness check:** Does the conclusion maintain the same intellectual sharpness as
+      the body? AI defaults to softening conclusions with reassurance ("this is hard but worth it").
+      The conclusion should be the sharpest paragraph, not the gentlest.
 
 If any check fails, fix it before presenting.
 
