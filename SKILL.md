@@ -1,13 +1,37 @@
 ---
 name: deep-dive
 description: >
-  Generate an expert-quality, opinionated knowledge roadmap for any domain — with correct hierarchy,
-  correct dependencies, correct weights, and deliberate omissions. Use this skill whenever the user
-  asks to "deeply understand", "learn from scratch", "get the big picture of", "深入浅出", "系统性地学习",
-  "give me a roadmap for", "what should I learn about X", "help me understand X end to end",
-  or any request that implies building structural understanding of a domain rather than answering
-  a specific factual question. Also use when the user says "从零开始学", "帮我梳理", "全景图", "知识体系".
-  Do NOT use for simple factual Q&A — only for requests that need a structured, hierarchical overview.
+  Produce expert-quality, opinionated structural analysis of a domain, concept,
+  mechanism, or decision — with explicit stance, explicit boundary, explicit
+  hierarchy, and deliberate omissions. This skill counteracts three default
+  failures of AI on "go deep" tasks: hedging instead of recommending, including
+  everything tangential instead of drawing a boundary, and flattening hierarchy
+  instead of separating core from peripheral. It enforces curate-over-generate
+  (find expert-curated structures first; do not synthesize from training alone),
+  applies a 5-phase process (scope → source curation → alignment → synthesis →
+  self-audit), and adapts output morphology to the task shape: learning roadmap,
+  knowledge map, mechanism analysis, concept audit, or decision guide.
+
+  Use this skill when the user asks to:
+    • deeply understand / 深入理解 / 深入浅出 a domain or concept
+    • learn from scratch / 从零开始学 / 系统性地学习 / 入门到精通
+    • get the big picture / 全景图 / 知识体系 / 帮我梳理 X
+    • give me a roadmap / what should I learn about X / end-to-end overview
+    • map a field / 这个领域里有哪些流派 / 主要分支是什么
+    • explain the mechanism behind / 为什么会出现 X / X 是怎么运作的 / 传导链条
+    • audit a concept / 这个词到底指什么 / X 里藏了哪些假设 / 不同人说 X 时
+      指的是不是一回事
+    • compare options and recommend / A 还是 B 更好 / 怎么选 / trade-off
+    • restructure or fix a structural document the user already has (edit mode):
+      tighten boundary, raise stance, fix hierarchy, remove adjacent-domain
+      creep, expose hidden evaluation standards, repair callout/link/index
+      structure, archive or compress existing pages
+
+  Do NOT use for:
+    • simple factual Q&A ("Postgres 默认端口是多少")
+    • pure execution tasks (write this code, format this table)
+    • creative writing without structural argument
+    • tasks where the user has not asked for depth, opinion, or structure
 ---
 
 ---
